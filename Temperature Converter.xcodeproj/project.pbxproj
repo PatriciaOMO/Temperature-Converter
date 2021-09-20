@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6564A126F6C86100736426 /* User Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6564A026F6C86100736426 /* User Input.swift */; };
+		1A6564A826F7C89200736426 /* Style 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6564A726F7C89200736426 /* Style 2.swift */; };
 		1AB15B7526F521C20017FF0A /* Temperature_ConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB15B7426F521C20017FF0A /* Temperature_ConverterApp.swift */; };
 		1AB15B7726F521C20017FF0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB15B7626F521C20017FF0A /* ContentView.swift */; };
 		1AB15B7926F521CB0017FF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB15B7826F521CB0017FF0A /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6564A026F6C86100736426 /* User Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Input.swift"; sourceTree = "<group>"; };
+		1A6564A726F7C89200736426 /* Style 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style 2.swift"; sourceTree = "<group>"; };
 		1AB15B7126F521C20017FF0A /* Temperature Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Temperature Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB15B7426F521C20017FF0A /* Temperature_ConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature_ConverterApp.swift; sourceTree = "<group>"; };
 		1AB15B7626F521C20017FF0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				1AB15B7426F521C20017FF0A /* Temperature_ConverterApp.swift */,
 				1AB15B7626F521C20017FF0A /* ContentView.swift */,
+				1A6564A026F6C86100736426 /* User Input.swift */,
+				1A6564A726F7C89200736426 /* Style 2.swift */,
 				1AB15B7826F521CB0017FF0A /* Assets.xcassets */,
 				1AB15B7D26F521CB0017FF0A /* Info.plist */,
 				1AB15B7A26F521CB0017FF0A /* Preview Content */,
@@ -140,6 +146,8 @@
 			files = (
 				1AB15B7726F521C20017FF0A /* ContentView.swift in Sources */,
 				1AB15B7526F521C20017FF0A /* Temperature_ConverterApp.swift in Sources */,
+				1A6564A126F6C86100736426 /* User Input.swift in Sources */,
+				1A6564A826F7C89200736426 /* Style 2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
