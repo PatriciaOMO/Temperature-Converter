@@ -60,9 +60,48 @@ struct Style_2: View {
                     }
                 }
                 .padding(.horizontal)
+                
+                VStack {
+                    
+                    // TODO: check for nil. but can an optional be binding?
+                    // TODO: add Kelvin
+                    Button(action: {
+                        
+                        if type == 1 {
+                            degreesDbl = Double(degreesString)!
+                            degreesDbl = (degreesDbl - 32) * (0.5556)
+                            degreesInt = Int(degreesDbl.rounded())
+                            result = String(degreesInt) + " °C"
+                            
+                        } else if type == 2 {
+                            degreesDbl = Double(degreesString)!
+                            degreesDbl = degreesDbl * (1.8) + 32
+                            degreesInt = Int(degreesDbl.rounded())
+                            result = String(degreesInt) + " °F"
+                        }
+                    }, label: {
+                        Text("Convert")
+                            .font(.title2)
+                            .padding(.horizontal)
+                            .foregroundColor(.gray)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(Color.gray, lineWidth: 2))
+                    })
+                    .padding()
+                    .frame(height: 30.0)
+                    
+                    Text(result)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                    
+                }
+                .padding(.top, 20)
             }
             .padding(.horizontal)
+            
         }
+        
     }
 }
 

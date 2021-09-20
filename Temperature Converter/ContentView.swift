@@ -26,7 +26,7 @@ struct ContentView: View {
             
             HStack {
                 VStack {
-                    // Degrees: (get user input)
+                    // MARK: user input degrees
                     Text("Degrees")
                         .foregroundColor(.gray)
 //                    TextField("Degrees", value: $number, formatter: NumberFormatter())
@@ -50,7 +50,7 @@ struct ContentView: View {
                 
                 //MARK: Picker
                 VStack {
-                    // Type: Drop down picker to choose  C F
+                    
                     Text("Type")
                         .foregroundColor(.gray)
                     Picker(selection: $type, label: Text("Type"),
@@ -58,15 +58,10 @@ struct ContentView: View {
                                 Text("°F").tag(1)
                                 Text("°C").tag(2)
                     })
-//                        .padding()
                         .pickerStyle(SegmentedPickerStyle())
                         .frame(width: 100)
-                        
-                  
                 }
                 .padding(.horizontal)
-                
-                
             }
             .padding(.horizontal)
             
@@ -75,8 +70,7 @@ struct ContentView: View {
             VStack {
                 
                 // TODO: check for nil. but can an optional be binding?
-                // Button: Convert
-                
+                // TODO: add Kelvin
                 Button(action: {
                     
                     if type == 1 {
@@ -102,9 +96,6 @@ struct ContentView: View {
                 })
                 .padding()
                 .frame(height: 30.0)
-//                .border(Color.black, width: 2)
-                
-                
                 
                 Text(result)
                     .font(.largeTitle)
