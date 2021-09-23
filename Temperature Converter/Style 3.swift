@@ -76,9 +76,7 @@ struct Style_3: View {
         // F -> C
         if picker1 == 1 && picker2 == 2 {
             convertedDegrees = (userInput - 32) * (0.5556)
-            result = "\(convertedDegrees.rounded()) °C"
-            
-        }
+            result = "\(convertedDegrees.rounded()) °C"        }
         // F -> K
         else if picker1 == 1 && picker2 == 3 {
             convertedDegrees = (userInput - 32) * (0.5556) + (273.15)

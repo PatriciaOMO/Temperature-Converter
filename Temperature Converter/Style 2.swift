@@ -53,15 +53,12 @@ struct Style_2: View {
             }
             .padding(.horizontal)
            
-            
+            // MARK: Button
             VStack {
                 
-                
-                // TODO: check for nil. but can an optional be binding?
-                // TODO: add Kelvin
                 Button(action: {
                     
-                    // check for nil and assign to new variable
+                    // make sure it's not nil and assign to new variable
                     print("degreeString, \(degreesString)")
                     guard let convertedDegrees = Double(degreesString) else {
                         return
@@ -100,6 +97,8 @@ struct Style_2: View {
         .padding(.horizontal)
         
     }
+    
+    
 }
 
 struct Style_2_Previews: PreviewProvider {
